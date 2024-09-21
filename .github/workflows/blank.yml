@@ -1,36 +1,36 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: readme.md
 
-# Controls when the workflow will run
+ Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "#brl33" branch
+   Triggers the workflow on push or pull request events but only for the "#brl33" branch
   push:
     branches: [ "#brl33" ]
   pull_request:
     branches: [ "#brl33" ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:open:branch:
+  workflow_dispatch:open:branch:brl33
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "open branch"
+  # This workflow contains a single job called "open new branch"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest: Unix 
+    runs-on: ubuntu-latest: Linux
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE:GitHub.com, so your job can access it
-      - uses: actions/checkout@v3
+      # Checks-out your repository under $GITHUB_WORKSPACE:kjppmppolska, so your job can access it
+      - uses: actions/checkout@v3.1
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: .exe.com
+      - name: Run a one-line command
+        run: .exe.com.run.set.post.jsn
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Run a single-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo No Add other actions to build,
+          echo test, and set your project.
