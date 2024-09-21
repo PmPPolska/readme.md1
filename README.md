@@ -1,0 +1,1 @@
+http://colab.research.google.com/github/elastic/elasticsearch-labs/blob/main/notebooks/integrations/cohere/inference-cohere
